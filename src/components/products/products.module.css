@@ -1,0 +1,126 @@
+.Headlines{
+    background: url("../../assests/background.jpg") no-repeat;
+    background-size: cover;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: whitesmoke;
+}
+
+.Media img{
+    max-width:100%;
+}
+
+.ProductDetails a{
+    text-decoration: none;
+    color: whitesmoke;
+    text-align: center;
+    margin-top: 30px;
+    background-color: #F2A154;
+    border: none;
+    border-radius: 8px;
+    display: block;
+    padding: 8px 30px;
+}
+
+
+@media (min-width: 600px){
+    .Headlines{
+        padding: 20px 0 0 100px;
+        width: 100%;
+        height: 500px;
+    }
+      
+    .Headlines h1, h6{
+        width: 40%;
+    }
+      
+    .Headlines h1{
+        font-size: 6rem;
+    }
+    
+    .Headlines h6{
+        font-size: 1.2rem;
+    }
+    
+    .Products{
+        margin: 30px 100px 0 100px;
+    }
+    
+    .Media{
+        overflow: hidden;
+        position: relative;
+    }
+    
+    .Media:hover{
+        cursor: pointer;
+    }
+    
+    .Overlay{
+        background: rgba(0, 0, 0, 0.7);
+        position: absolute;
+        height: 100%;
+        width: 100%;
+        z-index: 3;
+        opacity: 0;
+        transition: all ease-in-out 0.5s;
+    }
+    
+    .Media:hover .Overlay{
+        opacity: 1;
+    }
+    
+    .Media img{
+        z-index: -1;
+        margin: auto;
+        transform: scale(1);
+        transition: all ease-in-out 0.5s;
+    }
+    
+    .Media:hover img{
+        transform: scale(1.1);
+        filter: blur(2px);
+    }
+    
+    .ProductDetails{
+        color: whitesmoke;
+        margin-left: 10px;
+        z-index: 4;
+        position: absolute;
+        top: 100%;
+        opacity: 0;
+        transition: all ease-in-out 0.5s;
+    }
+    
+    .Media:hover .ProductDetails{
+        top:10%;
+        opacity: 1;
+    }
+}
+
+@media (max-width: 599px){
+    .Overlay{
+        display: none;
+    }
+    .Headlines{
+        padding: 10px;
+        height: 300px;
+    }
+    .Headlines h1, h6{
+        width: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+      
+    .Headlines h1{
+        font-size: 3rem;
+        margin-top: 30px;
+    }
+    
+    .Headlines h6{
+        font-size: 1.2rem;
+    }
+    
+    .Products{
+        margin: 20px 30px;
+    }
+}

@@ -1,0 +1,19 @@
+.Orders{
+    max-width: 50%;
+    margin: 20px auto;
+}
+
+.OrdersData{
+    border: 2px solid #ddd;
+    margin-bottom: 20px;
+}
+
+.OrdersData ul{
+    list-style: none;
+}
+
+.OrdersData span{
+    margin-right: 50px;
+    font-weight: 700;
+    font-size: 1.2rem;
+}

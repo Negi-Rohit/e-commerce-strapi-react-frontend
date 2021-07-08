@@ -1,0 +1,70 @@
+.Navbar{
+    display: flex;
+    justify-content: space-between;
+    margin-right: 100px;
+    margin-left: 100px;
+}
+
+.Navbar a{
+    color: black;
+    text-decoration: none;
+}
+
+.Navbar ul{
+    list-style: none;
+    font-size: 1.2rem;
+}
+
+.Navbar div:first-child{
+    padding: 10px 0;
+    font-size: 2.2rem;
+    letter-spacing: 2px;
+}
+
+.Navbar li:last-child:hover, .Navbar a:hover{
+    color: #F2A154;
+    text-decoration: underline;
+}
+
+.Toolbar{
+    display: flex;
+}
+
+.Toolbar li:not(:last-child){
+    margin-right: 20px;
+}
+
+.Toolbar li:last-child{
+    cursor: pointer;
+}
+
+@media (max-width: 900px) {
+    .Toolbar{
+        display: none;
+    }
+}
+
+.SidebarToggler{
+    border: none;
+    background-color: white;
+    cursor: pointer;
+}
+
+@media (min-width: 899px) {
+    .SidebarToggler {
+        display: none;
+    }
+}
+
+@media (max-width: 600px){
+    .Navbar{
+        margin-right: 10px;
+        margin-left: 10px;
+    }
+}
+
+
+
+
+
+  
