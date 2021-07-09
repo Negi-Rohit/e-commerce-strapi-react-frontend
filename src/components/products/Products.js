@@ -9,7 +9,7 @@ import { API_URL, imageUrl } from "../../utils/url";
 import AuthContext from "../../context/AuthContext";
 
 const Products = () => {
-    const { loading, setLoading } = useContext(loading);
+    const { loading, setLoading } = useContext(AuthContext);
 
     const [products, setProducts] = useState([]);
 
